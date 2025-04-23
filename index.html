@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEPOS TopUp Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #222;
+    }
+    nav button {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #444;
+    }
+    .content {
+      padding: 20px;
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .topup-list {
+      margin-top: 10px;
+    }
+    .topup-list li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>NEPOS TopUp Center</header>
+
+  <nav>
+    <button onclick="showTab('freefire')">Free Fire</button>
+    <button onclick="showTab('pubg')">PUBG Mobile</button>
+    <button onclick="showTab('netflix')">Netflix</button>
+    <button onclick="showTab('mlbb')">Mobile Legends</button>
+    <button onclick="showTab('clash')">Clash of Clans</button>
+    <button onclick="showTab('tiktok')">TikTok Followers</button>
+  </nav>
+
+  <div id="freefire" class="content active">
+    <h2>Free Fire (Top-up via UID)</h2>
+    <ul class="topup-list">
+      <li>20 Diamonds – Rs. 30</li>
+      <li>50 Diamonds – Rs. 50</li>
+      <li>115 Diamonds – Rs. 99</li>
+      <li>240 Diamonds – Rs. 190</li>
+      <li>480 Diamonds – Rs. 390</li>
+      <li>610 Diamonds – Rs. 490</li>
+      <li>720 Diamonds – Rs. 580</li>
+      <li>1240 Diamonds – Rs. 980</li>
+      <li>1355 Diamonds – Rs. 1080</li>
+      <li>1480 Diamonds – Rs. 1170</li>
+      <li>2530 Diamonds – Rs. 1970</li>
+      <li>Weekly Membership – Rs. 185</li>
+      <li>Monthly Membership – Rs. 980</li>
+      <li>Level Up Pass – Rs. 185</li>
+    </ul>
+  </div>
+
+  <div id="pubg" class="content">
+    <h2>PUBG Mobile (UC Direct Top-up)</h2>
+    <ul class="topup-list">
+      <li>60 UC – Rs. 140</li>
+      <li>120 UC – Rs. 280</li>
+      <li>325 UC – Rs. 670</li>
+      <li>660 UC – Rs. 1,330</li>
+      <li>1320 UC – Rs. 2,610</li>
+      <li>1800 UC – Rs. 3,530</li>
+      <li>3600 UC – Rs. 6,995</li>
+      <li>8100 UC – Rs. 12,500</li>
+    </ul>
+  </div>
+
+  <div id="netflix" class="content">
+    <h2>Netflix Subscription</h2>
+    <ul class="topup-list">
+      <li>1 Month – Rs. 585</li>
+      <li>3 Months – Rs. 1,699</li>
+      <li>6 Months – Rs. 3,300</li>
+      <li>12 Months – Rs. 5,500</li>
+    </ul>
+  </div>
+
+  <div id="mlbb" class="content">
+    <h2>Mobile Legends: Bang Bang</h2>
+    <ul class="topup-list">
+      <li>22 Diamonds – Rs. 70</li>
+      <li>86 Diamonds – Rs. 190</li>
+      <li>172 Diamonds – Rs. 345</li>
+      <li>257 Diamonds – Rs. 495</li>
+      <li>429 Diamonds – Rs. 805</li>
+      <li>706 Diamonds – Rs. 1,375</li>
+      <li>Weekly Pass – Rs. 250</li>
+      <li>1049 Diamonds – Rs. 1,905</li>
+      <li>1412 Diamonds – Rs. 2,500</li>
+      <li>2195 Diamonds – Rs. 3,695</li>
+      <li>3688 Diamonds – Rs. 6,105</li>
+    </ul>
+  </div>
+
+  <div id="clash" class="content">
+    <h2>Clash of Clans (Gems Top-up)</h2>
+    <ul class="topup-list">
+      <li>Pocketful of Gems (80 + 8 Bonus) – Rs. 200</li>
+      <li>Pile of Gems (500 + 50 Bonus) – Rs. 800</li>
+      <li>Bag of Gems (1,200 + 120 Bonus) – Rs. 1,440</li>
+      <li>Sack of Gems (2,500 + 250 Bonus) – Rs. 2,490</li>
+      <li>Box of Gems (6,500 + 650 Bonus) – Rs. 6,550</li>
+      <li>Chest of Gems (14,000 + 1,400 Bonus) – Rs. 14,150</li>
+    </ul>
+  </div>
+
+  <div id="tiktok" class="content">
+    <h2>TikTok Followers</h2>
+    <ul class="topup-list">
+      <li>1k followers – Rs. 700</li>
+      <li>5k followers – Rs. 2,920</li>
+      <li>10k followers – Rs. 8,000</li>
+    </ul>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="https://www.facebook.com/profile.php?id=61575560910877" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 50px; height: 50px;">
+    </a>
+  </div>
+
+  <p style="text-align: center; font-size: 14px; color: gray; margin-top: 20px;">
+    <strong>Disclaimer:</strong> No one is allowed to call this ID. For inquiries, please use the official communication methods only.
+  </p>
+  <p style="text-align: center; font-size: 14px; color: gray; margin-top: 20px;">
+    For the topup click the facebook logo and Message On NEPOS TOPUP CENTER 
+          </p>
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
